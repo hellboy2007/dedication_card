@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    list-style: none;
+}
+.topblack{
+    height:40px;
+    /* background: #999;
+    border: 1px solid #555; */
+}
+.container header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: #008c8c;
+    line-height: 40px;
+    height:40px;
+    color: #fff;
+    text-shadow: 10ch 10ch 10ch 10ch;
+}
+.container header h3{
+    text-align: center;
+}
+
+.card .category {
+    width:50px;
+    float:left;
+    background: #eee;
+}
+.card .category .tag{
+    padding:0px 10px;
+    background: #ccc;
+    text-align: center;
+    margin-top: 1px;
+    min-height: 100px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.card .category .tag:hover{
+    background: rgb(0, 140, 140);
+    color:#fff;
+    transition: .8s;
+    border: 1px solid goldenrod;
+}
+
+.card .category .tag.action{
+    background: #008c8c;
+    color:#fff;
+}
+
+.card .category .last{
+    border: 0px solid #000;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+    cursor:pointer;
+    padding:10px 0;
+    color: goldenrod;
+}
+
+
+.card .items {
+    position: relative;
+    counter-reset: item;
+    margin-left: 52px;
+}
+
+.card .items .item{
+    min-height: 60px;
+    padding-left: 60px;
+    background: #e9e9e9;
+}
+
+.card .items .item:before{
+    content: counter(item);
+    counter-increment: item;
+    display: block;
+    width: 1rem;
+	height: 1rem;
+    border: 1px solid 008c8c;
+    float:left;
+    margin-left:-40px;
+    margin-top:16px;
+    color: #999;
+	text-align: center;
+    line-height: 1rem;
+ }
+
+
+.items .item .recode{
+    min-height: 60px;
+    line-height: 26px;
+    height:100%;
+    border-radius: 3px;
+    border: 1px solid #008c8c;
+    resize:none;
+    border-radius: 2px;
+    outline: none;
+    -webkit-user-modify: read-write-plaintext-only;
+    margin:4px;
+    background: #fff;
+    font-family: ''
+}
+
