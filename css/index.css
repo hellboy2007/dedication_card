@@ -37,19 +37,24 @@
     min-height: 100px;
     display: inline-block;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
 
-.card .category .tag:hover{
+
+.card .category .tag.active{
     background: rgb(0, 140, 140);
+    color:#fff;
+}
+
+
+.card .category .tag:hover{
+    background: rgb(0, 140, 140,.6);
     color:#fff;
     transition: .8s;
     border: 1px solid goldenrod;
 }
 
-.card .category .tag.action{
-    background: #008c8c;
-    color:#fff;
-}
+
 
 .card .category .last{
     border: 0px solid #000;
@@ -67,6 +72,11 @@
     position: relative;
     counter-reset: item;
     margin-left: 52px;
+    display: none;
+}
+
+.card .items.active{
+    display: block;
 }
 
 .card .items .item{
